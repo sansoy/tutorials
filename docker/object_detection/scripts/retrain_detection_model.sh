@@ -28,7 +28,7 @@ usage() {
 END_OF_USAGE
 }
 
-num_training_steps=500
+num_training_steps=1000
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --num_training_steps)
