@@ -80,7 +80,7 @@ tar zxf images.tar.gz
 tar zxf annotations.tar.gz
 
 echo "DIVVING UP IMAGES 90% TRAIN and 10% TEST" 
-python object_detection/dataset_tools/determine_training_set.py
+python /content/models/research/object_detection/dataset_tools/determine_training_set.py
 
 echo "PREPARING label map..."
 cd "${OBJ_DET_DIR}"
