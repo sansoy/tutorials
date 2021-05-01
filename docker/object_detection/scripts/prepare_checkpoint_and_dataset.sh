@@ -88,7 +88,7 @@ cp "object_detection/data/robot_label_map.pbtxt" "${DATASET_DIR}"
 
 echo "CONVERTING dataset to TF Record..."
 cd "${DATASET_DIR}"
-python /content/models/research/dataset_tools/create_robot_no_trimap_tf_records.py \
+python /content/models/research/object_detection/dataset_tools/create_robot_no_trimap_tf_records.py \
     --label_map_path="${DATASET_DIR}/robot_label_map.pbtxt" \
     --data_dir="${DATASET_DIR}" \
     --output_dir="${DATASET_DIR}"
