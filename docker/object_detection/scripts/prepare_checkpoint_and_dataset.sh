@@ -86,8 +86,6 @@ echo "PREPARING label map..."
 cd "${OBJ_DET_DIR}"
 cp "object_detection/data/robot_label_map.pbtxt" "${DATASET_DIR}"
 
-
-
 echo "CONVERTING dataset to TF Record..."
 python object_detection/dataset_tools/create_robot_no_trimap_tf_records.py \
     --label_map_path="${DATASET_DIR}/robot_label_map.pbtxt" \
