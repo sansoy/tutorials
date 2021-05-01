@@ -79,10 +79,14 @@ wget https://www.dropbox.com/s/15trvq6vwqlh2yc/annotations.tar.gz
 tar zxf images.tar.gz
 tar zxf annotations.tar.gz
 
+echo "DIVVING UP IMAGES 90% TRAIN and 10% TEST 
+python determine_training_set.py
 
 echo "PREPARING label map..."
 cd "${OBJ_DET_DIR}"
 cp "object_detection/data/robot_label_map.pbtxt" "${DATASET_DIR}"
+
+
 
 echo "CONVERTING dataset to TF Record..."
 python object_detection/dataset_tools/create_robot_no_trimap_tf_records.py \
