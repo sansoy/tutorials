@@ -49,6 +49,7 @@ mkdir -p "${OUTPUT_DIR}"
 
 echo "GENERATING label file..."
 echo "0 polaris" >> "${OUTPUT_DIR}/labels.txt"
+echo "1 rockerbogie" >> "${OUTPUT_DIR}/labels.txt"
 
 echo "EXPORTING frozen graph from checkpoint..."
 python object_detection/export_tflite_ssd_graph.py \
