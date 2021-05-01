@@ -79,7 +79,7 @@ wget https://www.dropbox.com/s/15trvq6vwqlh2yc/annotations.tar.gz
 tar zxf images.tar.gz
 tar zxf annotations.tar.gz
 
-echo "DIVVING UP IMAGES 90% TRAIN and 10% TEST 
+echo "DIVVING UP IMAGES 90% TRAIN and 10% TEST" 
 python object_detection/dataset_tools/determine_training_set.py
 
 echo "PREPARING label map..."
