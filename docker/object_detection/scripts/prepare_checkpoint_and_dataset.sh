@@ -74,8 +74,8 @@ sed -i "s%DATASET_DIR_TO_CONFIGURE%${DATASET_DIR}%g" "${CKPT_DIR}/pipeline.confi
 echo "PREPARING dataset"
 mkdir -p "${DATASET_DIR}"
 cd "${DATASET_DIR}"
-wget https://www.dropbox.com/s/3c2kdiw3m1i7ooz/images.tar.gz
-wget https://www.dropbox.com/s/w5q8n5197t04zpf/annotations.tar.gz
+wget https://www.dropbox.com/s/x8ooyfrmhagqffz/images.tar.gz
+wget https://www.dropbox.com/s/15trvq6vwqlh2yc/annotations.tar.gz
 tar zxf images.tar.gz
 tar zxf annotations.tar.gz
 
